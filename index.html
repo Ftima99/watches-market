@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Bodoni Moda', serif;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #faf3f3;
+      width: 100%;
+      max-width: 390px;
+      padding: 20px;
+      border-radius: 30px;
+    }
+
+    .form-header {
+      text-align: left;
+      margin-bottom: 30px;
+      position: relative;
+      padding: 10px 0;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      text-decoration: none;
+      color: #333;
+      font-size: 20px;
+    }
+
+    h1 {
+      color: #000;
+      font-size: 24px;
+      margin: 0;
+      text-align: center;
+      font-weight: 400;
+    }
+
+    .signup-form input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+      margin-bottom: 20px;
+      font-size: 16px;
+      font-family: 'Arial', sans-serif;
+      background: transparent;
+    }
+
+    input::placeholder {
+      color: #c6a2a2;
+      font-family: 'Bodoni Moda', serif;
+    }
+
+    .signup-button {
+      width: 100%;
+      background-color: #4a4a4a;
+      color: white;
+      border: none;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 20px 0;
+      font-family: 'Bodoni Moda', serif;
+    }
+
+    .social-button {
+      width: 100%;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      font-family: 'Bodoni Moda', serif;
+    }
+
+    .apple {
+      background-color: #e8dcdc;
+      color: #000;
+    }
+
+    .google {
+      background-color: #e8dcdc;
+      color: #000;
+    }
+
+    .social-button img {
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-header">
+      <a href="#" class="back-button">←</a>
+      <h1>Create Your Account</h1>
+    </div>
+    <form class="signup-form">
+      <input type="text" placeholder="Username" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <input type="tel" placeholder="Phone Number" required>
+
+      <button type="submit" class="signup-button">Sign Up</button>
+
+      <button type="button" class="social-button apple">
+        <i class="fab fa-apple"></i>
+        Continue with iCloud
+      </button>
+
+      <button type="button" class="social-button google">
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48cGF0aCBmaWxsPSIjNDI4NWY0IiBkPSJNNDUuMTIgMjQuNWMwLTEuNTYtLjE0LTMuMDYtLjQtNC41SDI0djguNTFoMTEuODRjLS41MSAyLjc1LTIuMDYgNS4wOC00LjM5IDYuNjR2NS41Mmg3LjExYzQuMTYtMy44MyA2LjU2LTkuNDcgNi41Ni0xNi4xN3oiLz48cGF0aCBmaWxsPSIjMzRhODUzIiBkPSJNMjQgNDZjNS45NCAwIDEwLjkyLTEuOTcgMTQuNTYtNS4zM2wtNy4xMS01LjUyYy0xLjk3IDEuMzItNC40OSAyLjEtNy40NSAyLjEtNS43MyAwLTEwLjU4LTMuODctMTIuMzEtOS4wN0g0LjM0djUuN0M3Ljk2IDQxLjA3IDE1LjQgNDYgMjQgNDZ6Ii8+PHBhdGggZmlsbD0iI2ZiYmMwNSIgZD0iTTExLjY5IDI4LjE4QzExLjI1IDI2Ljg2IDExIDI1LjQ1IDExIDI0cy4yNS0yLjg2LjY5LTQuMTh2LTUuN0g0LjM0QTIxLjk5IDIxLjk5IDAgMCAwIDIgMjRjMCAzLjU1Ljg1IDYuOTEgMi4zNCA5Ljg4bDcuMzMtNS43eiIvPjxwYXRoIGZpbGw9IiNlYTQzMzUiIGQ9Ik0yNCAxMC43MmM1LjE2IDAgOS43OCAxLjc3IDEzLjQyIDUuMjdsNi4zLTYuM0MzOS4wNSA0LjIyIDMyLjE2IDIgMjQgMiAxNS40IDIgNy45NiA2LjkzIDQuMzQgMTQuMTJsNy4zNSA1LjdDMTMuNDIgMTQuNTkgMTguMjcgMTAuNzIgMjQgMTAuNzJ6Ii8+PC9zdmc+"
+          alt="Google">
+        Continue with Google
+      </button>
+    </form>
+  </div>
+</body>
+
+</html>
